@@ -18,7 +18,8 @@
     "gulp": "^4.0.2",
     "gulp-babel-minify": "^0.5.1",
     "gulp-file-include": "^2.2.2",
-    "gulp-postcss": "^8.0.0"
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0"
   },
   "dependencies": {
     "tailwindcss": "^1.4.6"

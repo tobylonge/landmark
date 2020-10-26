@@ -1,5 +1,6 @@
 const { src, dest, watch, series } = require("gulp");
 const postcss = require("gulp-postcss");
+const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 const minify = require("gulp-babel-minify");
 const fileinclude = require("gulp-file-include");
@@ -20,6 +21,11 @@ function clean() {
   return del(["build"]);
 }
 
+//Move images
+function moveFiles() {
+  return src(["./img/*", "./img/**/*"]).pipe(dest("build/img"));
+}
+
 function jsTask() {
   return src("./js/main.js")
     .pipe(
@@ -33,11 +39,14 @@ function jsTask() {
 }
 
 function cssTask() {
-  return src("./css/styles.css").pipe(postcss()).pipe(dest("./build/css/"));
+  return src("./scss/styles.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(postcss())
+    .pipe(dest("./build/css/"));
 }
 
 function includefileTask() {
-  return src(["index.html"])
+  return src(["*.html"])
     .pipe(
       fileinclude({
         prefix: "@@",
@@ -48,16 +57,24 @@ function includefileTask() {
 }
 
 function watchTask() {
-  clean();
+  //   clean();
   browserSync.init({
     server: {
       baseDir: "./build/",
     },
   });
-  watch("./css/styles.css", cssTask);
+  watch(["./*.html", "./template/*.html", "./scss/*.scss"], cssTask);
+  watch(["./*.html", "./template/*.html"], moveFiles);
   watch("./js/main.js", jsTask);
-  watch("index.html", includefileTask);
-  watch("./*.html").on("change", browserSync.reload);
+  watch(["./*.html", "./template/*.html"], includefileTask);
+  watch(["./*.html", "./template/*.html"]).on("change", browserSync.reload);
 }
 
-exports.default = series(clean, cssTask, jsTask, includefileTask, watchTask);
+exports.default = series(
+  clean,
+  moveFiles,
+  cssTask,
+  jsTask,
+  includefileTask,
+  watchTask
+);

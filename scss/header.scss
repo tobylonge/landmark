@@ -1,0 +1,33 @@
+header {
+  background-color: rgba(38, 45, 96, 0.9);
+}
+
+.text-15 {
+  font-size: 0.9375rem;
+}
+.elementor-icon {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 11px;
+  }
+}
+
+.hfe-nav-menu-icon {
+  position: absolute;
+  right: 1rem;
+  font-size: 25px;
+  /* bottom: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: calc(100% - 30px); */
+  /* top: 50%; */
+  background-color: rgba(38, 45, 96, 0.3215686274509804);
+  padding: 0.35em;
+  font-size: 25px;
+  color: #fff;
+}

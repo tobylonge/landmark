@@ -1,0 +1,16 @@
+$primary-color: #ff8300;
+$secondary-color: #2d36b4;
+
+.text-primary {
+  color: $primary-color;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+.bg-secondary {
+  background: $secondary-color;
+}
