@@ -1,0 +1,213 @@
+.carousel {
+  height: 95vh;
+  border-bottom: 5px solid #c6c6c6;
+}
+.slider {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #060632 30%,
+    rgba(6, 6, 50, 0.2) 56%
+  );
+  opacity: 0.97;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+}
+.small-header {
+  line-height: 15px;
+  @media (max-width: 768px) {
+    line-height: normal;
+  }
+}
+.premium-button-text {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  width: max-content;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.service-container {
+  background-image: url("/img/service-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.service-header {
+  background-color: #060934;
+  opacity: 0.86;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.element-divider {
+  border-top: 2px solid #cecece;
+  width: 30%;
+  padding-bottom: 15px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 0px;
+  left: auto;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 0px;
+  right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+}
+
+.service-card {
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1rem;
+  img {
+    height: 120px;
+    object-fit: contain;
+    opacity: 0.5;
+  }
+  &:hover,
+  &.active {
+    border: 3px solid $primary-color;
+  }
+  &.active {
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: -15px;
+      border-top: 15px solid $primary-color;
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-bottom: none;
+      z-index: 3;
+    }
+    img {
+      opacity: 1;
+    }
+  }
+}
+.more-info {
+  margin-top: -30px;
+  img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    animation: fadein 2s;
+  }
+  .background-overlay {
+    position: absolute;
+    background-image: linear-gradient(
+      90deg,
+      #060632 30%,
+      rgba(6, 6, 50, 0.2) 70%
+    );
+    z-index: 1;
+  }
+  .swiper-wrapper {
+    z-index: unset;
+  }
+  .content {
+    animation: slideFromRight 0.5s linear;
+    p,
+    li {
+      line-height: 1.4;
+      font-weight: 100;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.ecosystem {
+  background-image: url("/img/service-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // min-height: 100vh;
+  border-top: 2px solid #071648;
+  .background-overlay {
+    background-color: rgba(6, 9, 52, 0.86);
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    .ecosystem-header {
+      img {
+        transition-duration: 0.3s;
+        height: 70px;
+        @media (max-width: 768px) {
+          height: 60px;
+        }
+      }
+    }
+    .card {
+      background: white;
+      padding: 1rem 1rem 4rem;
+      .number-body {
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 15px 10px rgba(32, 33, 36, 0.28);
+        margin: 0 auto;
+        background-color: #ffffff;
+        color: #2d36b4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: -3rem;
+      }
+      .card-body {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+          width: 70px;
+          margin-bottom: 1.5rem;
+        }
+        h2 {
+          color: #2d36b4;
+          font-size: 1rem;
+          // margin-bottom: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

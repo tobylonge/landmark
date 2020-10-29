@@ -1,0 +1,28 @@
+.home-carousel {
+  height: 95vh;
+  border-bottom: 5px solid #c6c6c6;
+}
+.lifestyle-card {
+  &:hover {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: scale(1.1);
+  }
+}
+
+.promo {
+  border-bottom: 5px solid #c6c6c6;
+  border-top: 5px solid #c6c6c6;
+}
+
+.event-card {
+  margin: 0.5rem;
+  background: #09173a;
+  border: 1px solid #51505d;
+}
+
+.promo-carousel {
+  .text-primary {
+    min-height: 50px;
+  }
+}

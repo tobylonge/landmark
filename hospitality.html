@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospitality | Landmark</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background: #ffffff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #f5a127;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 30px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+</style>
+
+<body>
+
+    <!-- header -->
+    @@include('template/header.html')
+
+    <!-- main -->
+    <!-- Slider -->
+    <div class="swiper-container carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider" style="background-image:url(img/hospitality-slider1.png)">
+                <div class="background-overlay">
+                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                        <div class="container mx-auto px-4 md:px-0">
+                            <h2 class="text-xl md:text-2xl font-medium text-white small-header">OUR HOSPITALITY IS
+                            </h2>
+                            <h1 class="text-3xl md:text-4xl font-bold text-primary">LOVE IN ACTION</h1>
+                            <p class="text-white w-full md:w-1/3 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Ut elit
+                                tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                            <div class="premium-button-container">
+                                <a class="premium-button" href="#" tabindex="0">
+                                    <div class="premium-button-text bg-secondary">
+                                        <span>LEARN MORE</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide slider" style="background-image:url(img/hospitality-slider2.png)">
+                <div class="background-overlay">
+                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                        <div class="container mx-auto px-4 md:px-0">
+                            <h2 class="text-xl md:text-2xl font-medium text-white small-header">OUR HOSPITALITY IS</h2>
+                            <h1 class="text-3xl md:text-4xl font-bold text-primary">LOVE IN ACTION</h1>
+                            <p class="text-white w-full md:w-1/3 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Ut elit
+                                tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                            <div class="premium-button-container">
+                                <a class="premium-button" href="#" tabindex="0">
+                                    <div class="premium-button-text bg-secondary">
+                                        <span>LEARN MORE</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- service content -->
+    <div class="service-container">
+        <div class="service-header">
+            <div class="container mx-auto pt-16 pb-5 px-4 md:px-0">
+                <h2 class="premium-dual-header-first-header text-white text-3xl font-medium"><span
+                        class="premium-dual-header-first-span">Move your
+                        business to </span><span class="premium-dual-header-second-header text-primary font-bold">The
+                        Landmark</span></h2>
+            </div>
+            <div class="element-divider"></div>
+            <div class="container mx-auto pb-8 md:pb-24 px-4 md:px-0 ">
+                <p class="text-white leading-8">Business at Landmark Lorem Ipsum is simply dummy text of the
+                    printing
+                    and typesetting industry.Lorem
+                    Ipsum is simply dummy text of the printing and typesetting industry. dummy text of the printing and
+                    typesetting industry typesetting industry.Lorem Ipsum is simply</p>
+            </div>
+            <div class="container mx-auto pb-5">
+                <!-- Swiper -->
+                <div class="relative px-10">
+                    <div class=" swiper-container sliders" style="position: unset;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="service-card active" data-slide="1" onclick="getDetails(this)">
+                                    <img data-src="img/service/1.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="2" onclick="getDetails(this)">
+                                    <img data-src="img/service/2.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="3" onclick="getDetails(this)">
+                                    <img data-src="img/service/3.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="4" onclick="getDetails(this)">
+                                    <img data-src="img/service/4.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="5" onclick="getDetails(this)">
+                                    <img data-src="img/service/5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="6" onclick="getDetails(this)">
+                                    <img data-src="img/service/6.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="7" onclick="getDetails(this)">
+                                    <img data-src="img/service/7.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="8" onclick="getDetails(this)">
+                                    <img data-src="img/service/8.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="9" onclick="getDetails(this)">
+                                    <img data-src="img/service/9.png" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card" data-slide="10" onclick="getDetails(this)">
+                                    <img data-src="img/service/10.jpeg" alt="" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-info">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- landmark Ecosystem -->
+    <div class="ecosystem">
+        <div class="background-overlay">
+            <div class="container mx-auto py-8 px-4 md:px-0">
+                <div class="ecosystem-header flex">
+                    <img src="img/3.png" class="mr-4" />
+                    <div class="ecosystem-desc text-white">
+                        <p class="text-base md:text-xl font-light">steps to becoming part of the</p>
+                        <h2 class="text-2xl md:text-3xl font-medium">Landmark Ecosystem</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="element-divider"></div>
+            <div class="container mx-auto">
+                <div class="flex py-20 w-full md:w-5/6 mx-auto flex-col md:flex-row">
+                    <div class="card md:w-1/3 mx-6 mb-12 md:mb-0">
+                        <div class="number-body">
+                            <span class="ha-number-text">1</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/ecosystem/1.png" alt="">
+                            <h2>SCHEDULE A CALL</h2>
+                            <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has
+                                been
+                                the
+                                industry's standard dummy text survived not only five centuries,</p>
+                        </div>
+                    </div>
+                    <div class="card md:w-1/3 mx-6 mb-12 md:mb-0">
+                        <div class="number-body">
+                            <span class="ha-number-text">2</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/ecosystem/2.png" alt="">
+                            <h2>GET YOUR PLAN</h2>
+                            <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has
+                                been
+                                the
+                                industry's standard dummy text survived not only five centuries,</p>
+                        </div>
+                    </div>
+                    <div class="card md:w-1/3 mx-6 mb-12 md:mb-0">
+                        <div class="number-body">
+                            <span class="ha-number-text">3</span>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/ecosystem/3.png" alt="">
+                            <h2>LAUNCH YOUR BUSINESS</h2>
+                            <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has
+                                been
+                                the
+                                industry's standard dummy text survived not only five centuries,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('template/footer.html')
+    @@include('template/menu.html')
+
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>

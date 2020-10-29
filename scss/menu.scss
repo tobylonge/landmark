@@ -1,0 +1,35 @@
+.menu-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.6);
+  .flyout {
+    min-width: 250px;
+    max-width: 100%;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 12;
+    background-color: rgba(38, 45, 96, 0.77);
+    padding: 0 1rem;
+  }
+}
+.close-btn {
+  cursor: pointer;
+}
+.dropdown-menu {
+  transition: all 0.3s ease 0s;
+  background-color: rgba(38, 45, 96, 0.77);
+  padding: 0 1rem;
+  //   display: none;
+}
+.menu-item a:hover {
+  color: $primary-color;
+}
+// .menu-item a:hover + .dropdown-menu {
+//   display: block;
+// }

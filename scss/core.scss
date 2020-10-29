@@ -1,0 +1,25 @@
+$primary-color: #ff8300;
+$secondary-color: #2d36b4;
+$dark-bg: #262d61;
+
+.text-primary {
+  color: $primary-color;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+.bg-secondary {
+  background: $secondary-color;
+}
+.bg-dark {
+  background: $dark-bg;
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1180px;
+  }
+}

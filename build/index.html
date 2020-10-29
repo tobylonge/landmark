@@ -1,20 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gulp and Tailwindcss Boilerplate</title>
+    <title>Landmark |</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
+<style>
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background: #ffffff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #f5a127;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 30px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+</style>
+
 <body>
-    
+
     <!-- header -->
-    <div>Header here:::</div>
+    <header class="top-0 left-0 right-0 fixed p-5 z-10">
+  <div class="container mx-auto flex justify-between">
+    <div class="header-left">
+      <a href="/">
+        <img src="img/logo.png" alt="Landmark" class="h-12">
+      </a>
+    </div>
+    <div class="header-right items-center hidden md:flex">
+      <div class="elementor-icon-box-wrapper flex mr-8">
+        <span class="elementor-icon mr-2 bg-white p-1 rounded-full">
+          <i aria-hidden="true" class="fas fa-phone-alt"></i>
+        </span>
+        <p class="elementor-icon-box-title text-sm text-white">
+          +234 803 000 0000
+        </p>
+      </div>
+      <div class="header-right flex items-center">
+        <div class="elementor-icon-box-wrapper flex mr-4">
+          <span class="elementor-icon mr-2 bg-white p-1 rounded-full">
+            <i aria-hidden="true" class="far fa-envelope"></i>
+          </span>
+          <p class="elementor-icon-box-title text-sm text-white">
+            contact@landmarklagos.com
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hfe-nav-menu-icon">
+      <a><i aria-hidden="true" tabindex="0" class="fas fa-align-justify"></i></a>
+    </div>
+</header>
 
     <!-- main -->
 
-    <!-- footer -->
+    <!-- Slider -->
+    <div class="swiper-container home-carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider" style="background-image:url(img/home/banner-1.jpeg)">
+                <div class="background-overlay">
+                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                        <div class="container mx-auto px-4 md:px-0">
+                            <h2 class="text-xl md:text-3xl font-medium text-white small-header">THE EVOLUTION OF
+                            </h2>
+                            <h1 class="text-3xl md:text-5xl font-bold text-primary">REAL ESTATE</h1>
+                            <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                                luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                dapibus leo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider" style="background-image:url(img/home/banner-2.jpg)">
+                <div class="background-overlay">
+                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                        <div class="container mx-auto px-4 md:px-0">
+                            <h2 class="text-xl md:text-3xl font-medium text-white small-header">STATE OF THE ACT
+                                OCCASIONS
+                            </h2>
+                            <h1 class="text-3xl md:text-5xl font-bold text-primary">EVENT CENTER</h1>
+                            <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                                luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                dapibus leo.</p>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <div class="swiper-slide slider" style="background-image:url(img/home/banner-3.jpg)">
+                <div class="background-overlay">
+                    <div class="elementor-widget-wrap flex justify-center flex-col h-full">
+                        <div class="container mx-auto px-4 md:px-0">
+                            <h2 class="text-xl md:text-3xl font-medium text-white small-header">BUSINESS SHOWCASE
+                                MASTERCLASS
+                            </h2>
+                            <h1 class="text-3xl md:text-5xl font-bold text-primary">SALES EXHIBITION</h1>
+                            <p class="text-white w-full md:w-2/5 text-sm mt-5 mb-8">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                                luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                dapibus leo.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- service content -->
+    <div class="service-container">
+        <div class="service-header py-8">
+            <div class="container mx-auto px-4 md:px-0 flex min-h-screen items-center md:flex-row flex-col-reverse">
+                <div class="w-full md:w-3/5 flex justify-center flex-wrap -mx-2 md:mr-12 px-4">
+                    <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-0">
+                        <div><img src="img/home/lifestyle-1.jpeg" alt="" class="h-32 md:h-auto">
+                            <div class="bg-primary w-100 h-2 relative">
+                                <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-0"">
+                        <div>
+                            <img src=" img/home/lifestyle-2.jpeg" alt="" class="h-32 md:h-auto">
+                        <div class="bg-primary w-100 h-2 relative">
+                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
+                        </div>
+                </div>
+                </a>
+                <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-0">
+                    <div>
+                        <img src=" img/home/lifestyle-3.png" alt="" class="h-32 md:h-auto">
+                        <div class="bg-primary w-100 h-2 relative">
+                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-12">
+                    <div>
+                        <img src="img/home/lifestyle-4.jpeg" alt="" class="h-32 md:h-auto">
+                        <div class="bg-primary w-100 h-2 relative">
+                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="flex justify-center w-1/2 md:w-1/3 px-2 lifestyle-card mt-4 md:mt-12">
+                    <div>
+                        <img src="img/home/lifestyle-5.jpeg" alt="" class="h-32 md:h-auto">
+                        <div class="bg-primary w-100 h-2 relative">
+                            <div class="absolute bg-dark h-full w-1/12 ml-4"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-2/5 md:text-right text-white">
+                <h2 class="md:text-right text-xl md:text-4xl font-bold text-primary">Business, Leisure &</h2>
+                <h2 class="md:text-right text-3xl md:text-6xl font-medium text-white leading-none mb-4">Lifestyle
+                </h2>
+                <p class="md:text-right text-sm border-b border-white border-solid pb-4 mb-8 inline-flex">At The
+                    Most
+                    Prestigious
+                    Development <br />on the Shorelines of Lagos</p>
+                <p class="md:text-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been
+                    the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+                <p class="md:text-right">It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="service-container promo ">
+        <div class="service-header py-8">
+            <div class="flex min-h-screen justify-center flex-col">
+                <div class="container mx-auto px-4 md:px-0">
+                    <h2 class="text-xl md:text-3xl font-medium text-white small-header">
+                        EVENTS &
+                    </h2>
+                    <h1 class="text-3xl md:text-5xl font-bold text-primary">PROMO</h1>
+                </div>
+                <div class="element-divider"></div>
+                <div class="container mx-auto pb-5">
+                    <!-- Swiper -->
+                    <div class="relative px-10 md:px-16">
+                        <div class=" swiper-container promo-carousel" style="position: unset;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="border border-solid border-white p-2">
+                                        <div class="event-card">
+                                            <img src="img/home/event-1.png" alt="">
+                                        </div>
+                                        <div class="text-center pt-6">
+                                            <h2 class="text-primary mb-4 font-medium">Landmark Loyalty Reward System
+                                            </h2>
+                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
+                                                printing and typesetting
+                                                industry.
+                                                Lorem
+                                                Ipsum is simply</p>
+                                            <a href="hospitality.html" class="text-primary inline-flex mb-4">Read
+                                                More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border border-solid border-white p-2">
+                                        <div class="event-card">
+                                            <img src="img/home/event-2.jpg" alt="">
+                                        </div>
+                                        <div class="text-center pt-6">
+                                            <h2 class="text-primary mb-4 font-medium">Landmark Retail Boulevard Launch
+                                            </h2>
+                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
+                                                printing and typesetting
+                                                industry.
+                                                Lorem
+                                                Ipsum is simply</p>
+                                            <a href="#" class="text-primary inline-flex mb-4">Read More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border border-solid border-white p-2">
+                                        <div class="event-card">
+                                            <img src="img/home/event-3.jpeg" alt="">
+                                        </div>
+                                        <div class="text-center pt-6">
+                                            <h2 class="text-primary mb-4 font-medium">Watch Movies at Filmhouse for just
+                                                1k… Mon – Thurs
+                                            </h2>
+                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
+                                                printing and typesetting
+                                                industry.
+                                                Lorem
+                                                Ipsum is simply</p>
+                                            <a href="#" class="text-primary inline-flex mb-4">Read More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border border-solid border-white p-2">
+                                        <div class="event-card">
+                                            <img src="img/home/event-4.jpg" alt="">
+                                        </div>
+                                        <div class="text-center pt-6">
+                                            <h2 class="text-primary mb-4 font-medium">Landmark Beach, fun, games and
+                                                relaxation centre
+                                            </h2>
+                                            <p class="text-sm text-white mb-4">Lorem Ipsum is simply dummy text of the
+                                                printing and typesetting
+                                                industry.
+                                                Lorem
+                                                Ipsum is simply</p>
+                                            <a href="#" class="text-primary inline-flex mb-4">Read More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <!-- footer -->
+<footer>
+    <div class="footer-wrapper">
+        <div class="container mx-auto pt-8 footer md:flex hidden">
+            <div class="w-1/3 text-primary text-2xl">ABOUT US
+            </div>
+            <div class="w-1/3 text-primary text-center text-2xl">COMPANY LINKS</div>
+            <div class="w-1/3 text-primary text-2xl">CONTACT INFO</div>
+        </div>
+        <div class="container mx-auto flex footer-content flex-col md:flex-row p-4 sm:p-0">
+            <div class="md:w-1/3 text-white text-sm leading-7 w-full">
+                <div class="text-primary text-xl block md:hidden">ABOUT US</div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                pulvinar dapibus leo. <br /> <a class="text-primary">Read more...</a>
+            </div>
+            <div class="md:w-1/3 text-white w-full">
+                <div class="text-primary text-xl block mt-4 md:mt-0 md:hidden">COMPANY LINKS</div>
+                <ul class="text-left md:text-center leading-7">
+                    <li class="menu-item">
+                        <a href="https://collinsoforgu.com/completed-development/"
+                            class="block transform hover:scale-125">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://collinsoforgu.com/about-us/"
+                            class="block transform hover:scale-125 hover:text-primary">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://collinsoforgu.com/contact/" class="block transform hover:scale-125">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://collinsoforgu.com/blog/" class="block transform hover:scale-125">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 text-sm text-white w-full">
+                <ul class="leading-10">
+                    <li>
+                        <span class="mr-4 rounded-full bg-white p-1 inline-flex">
+                            <i class="fas fa-phone-alt text-black text-xs"></i>
+                        </span>+234 803 0000000
+                    </li>
+                    <li>
+                        <span class="mr-4 rounded-full bg-white p-1 inline-flex">
+                            <i class="far fa-envelope text-black text-xs"></i>
+                        </span>contact@landmarklagos.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto text-center">
+            <ul class="social_media inline-flex text-white">
+                <li class="mx-3">
+                    <a href="#" class="rounded-full bg-white p-1 inline-flex h-8 w-8 justify-center items-center icons">
+
+                        <i aria-hidden="true" class="fab fa-facebook-f text-black"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a href="#" class="rounded-full bg-white p-1 inline-flex h-8 w-8 justify-center items-center icons">
+
+                        <i aria-hidden="true" class="fab fa-twitter text-black"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a href="#" class="rounded-full bg-white p-1 inline-flex h-8 w-8 justify-center items-center icons">
+
+                        <i aria-hidden="true" class="fab fa-instagram text-black"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a href="#" class="rounded-full bg-white p-1 inline-flex h-8 w-8 justify-center items-center icons">
+
+                        <i aria-hidden="true" class="fab fa-linkedin-in text-black"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a href="#" class="rounded-full bg-white p-1 inline-flex h-8 w-8 justify-center items-center icons">
+
+                        <i aria-hidden="true" class="fab fa-youtube text-black"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a href="#" class="rounded-full bg-white p-1 inline-flex h-8 w-8 justify-center items-center icons">
+
+                        <i aria-hidden="true" class="fab fa-whatsapp text-black"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="hidden w-2/5 py-16 transform rotate-90 rotate-180"></div>
+    </div>
+</footer>
+    <div class="menu-nav hidden">
+    <div class="flyout">
+        <div class="flyout-top flex justify-end">
+            <a class="text-3xl text-white close-btn">×</a>
+        </div>
+        <div class="flyout-content">
+            <ul class="menu px-4 font-light text-white leading-10 text-sm">
+                <li class="menu-item"><a class="flex justify-between items-center" href="/">Home</a></li>
+                <li class="menu-item">
+                    <a class="flex justify-between items-center" href="#">About Us <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu hidden">
+                        <ul>
+                            <li><a href="#">Company Profile</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Investors Relations</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Business</a></li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Leisure</a></li>
+                <li class="menu-item"><a class="flex justify-between items-center"
+                        href="hospitality.html">Hospitality</a></li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Events</a></li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Lifestyle</a></li>
+                <li class="menu-item">
+                    <a class="flex justify-between items-center" href="#">Our Development <i
+                            class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu hidden">
+                        <ul>
+                            <li><a href="#">Completed Development</a></li>
+                            <li><a href="#">Ongoing Development</a></li>
+                            <li><a href="#">Future Development</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Career</a></li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Media</a></li>
+                <li class="menu-item"><a class="flex justify-between items-center" href="#">Contact</a></li>
+            </ul>
+            <div class=" border-white border-t pt-4 items-center block md:hidden">
+                <div class="elementor-icon-box-wrapper flex mb-2">
+                    <span class="elementor-icon mr-2 bg-white p-1 rounded-full">
+                        <i aria-hidden="true" class="fas fa-phone-alt"></i>
+                    </span>
+                    <p class="elementor-icon-box-title text-15 text-white">
+                        +234 803 000 0000
+                    </p>
+                </div>
+                <div class="flex items-center mb-2">
+                    <div class="elementor-icon-box-wrapper flex">
+                        <span class="elementor-icon mr-2 bg-white p-1 rounded-full">
+                            <i aria-hidden="true" class="far fa-envelope"></i>
+                        </span>
+                        <p class="elementor-icon-box-title text-15 text-white">
+                            contact@landmarklagos.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
 </body>
+
 </html>
